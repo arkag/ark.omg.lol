@@ -1,4 +1,4 @@
-<ul>
+<ul id="navbar-ul">
   <li id="navbar-li"><a rel="me" href="https://alex.kagno.com/">Home</a></li>
   <li id="navbar-li"> | </li>
   <li id="navbar-li"><a rel="me" href="https://alex.kagno.com/blog">Blog</a></li>
@@ -11,6 +11,7 @@
 }
 #navbar-ul {
   text-align: center;
+  margin: 0 auto;
 }
 </style>
 
