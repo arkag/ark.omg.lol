@@ -1,0 +1,25 @@
+on: 
+  push:
+    branches:
+      - main
+    paths:
+      - now/*
+
+jobs:
+  web_import:
+    runs-on: ubuntu-latest
+    name: omg.lol
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - id: web_import
+        env:
+          ADDRESS: ${{ vars.OMG_LOL_NAME }}
+          API_KEY: ${{ secrets.OMG_LOL_API_KEY }}
+        run: |
+          curl --location \
+            --request POST \
+            --header "Authorization: Bearer ${API_KEY}" \
+            "https://api.omg.lol/address/${ADDRESS}/web" \
+            --data-binary "@web/profile.md"
