@@ -1,14 +1,24 @@
+<ul>
+  <li id="navbar-li"><a rel="me" href="https://alex.kagno.com/">Home</a></li>
+  <li id="navbar-li"> | </li>
+  <li id="navbar-li"><a rel="me" href="https://alex.kagno.com/blog">Blog</a></li>
+  <li id="navbar-li"> | </li>
+  <li id="navbar-li"><a rel="me" href="https://alex.kagno.com/resume">Resume</a></li>
+</ul>
+<style>
+#navbar-li {
+  display: inline;
+}
+#navbar-ul {
+  text-align: center;
+}
+</style>
+
+---
+
 {profile-picture}
 
 # Alex Kagno
-
-<table style="text-align: center">
-  <tr>
-    <th><a rel="me" href="https://alex.kagno.com/">Home</a></th>
-    <th><a rel="me" href="https://alex.kagno.com/blog">Blog</a></th>
-    <th><a rel="me" href="https://alex.kagno.com/resume">Resume</a></th>
-  </tr>
-</table>
 
 | Pronouns: he/him
 | Occupation: IT Automation Specialist
