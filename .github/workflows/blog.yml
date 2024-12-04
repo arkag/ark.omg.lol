@@ -23,5 +23,5 @@ jobs:
       - id: weblog_import
         uses: neatnik/weblog.lol@v1
         env:
-          ADDRESS: ${{ secrets.OMG_LOL_ACCT_EMAIL }}
+          ADDRESS: ${{ vars.OMG_LOL_NAME }}
           WEBLOG_API_KEY: ${{ secrets.OMG_LOL_API_KEY }}
