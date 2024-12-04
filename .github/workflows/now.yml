@@ -3,6 +3,7 @@ on:
     branches:
       - main
     paths:
+      - .github/workflows/now.yml
       - now/*
 
 jobs:
@@ -21,5 +22,7 @@ jobs:
           curl --location \
             --request POST \
             --header "Authorization: Bearer ${API_KEY}" \
-            "https://api.omg.lol/address/${ADDRESS}/web" \
-            --data-binary "@now/now.md"
+            "https://api.omg.lol/address/${ADDRESS}/now" \
+            --data '{"listed": "1", "content": '"$(cat now/now.md)"'}'
+
+            

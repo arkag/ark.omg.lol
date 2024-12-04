@@ -22,5 +22,5 @@ jobs:
           curl --location \
             --request POST \
             --header "Authorization: Bearer ${API_KEY}" \
-            "https://api.omg.lol/address/${ADDRESS}/now" \
-            --data '{"publish": true, "content": "@web/profile.md"}'
+            "https://api.omg.lol/address/${ADDRESS}/web" \
+            --data '{"publish": true, "content": '"$(cat web/profile.md)"'}'
