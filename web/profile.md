@@ -2,8 +2,13 @@
 
 # Alex Kagno
 
-| <a rel="me" href="https://alex.kagno.com/">Home</a> | <a rel="me" href="https://alex.kagno.com/blog">Blog</a> | <a rel="me" href="https://alex.kagno.com/resume">Resume</a> |
-| ------------- | ------------- | ------------- |
+<table style="text-align: center">
+  <tr>
+    <th><a rel="me" href="https://alex.kagno.com/">Home</a></th>
+    <th><a rel="me" href="https://alex.kagno.com/blog">Blog</a></th>
+    <th><a rel="me" href="https://alex.kagno.com/resume">Resume</a></th>
+  </tr>
+</table>
 
 | Pronouns: he/him
 | Occupation: IT Automation Specialist
