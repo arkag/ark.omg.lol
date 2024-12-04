@@ -1,3 +1,5 @@
+name: Update Now Page
+
 on: 
   push:
     branches:
@@ -9,20 +11,21 @@ on:
 jobs:
   web_import:
     runs-on: ubuntu-latest
-    name: omg.lol
+    name: ${{ vars.OMG_LOL_NAME }}.omg.lol/now
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 2
-      - id: web_import
-        env:
-          ADDRESS: ${{ vars.OMG_LOL_NAME }}
-          API_KEY: ${{ secrets.OMG_LOL_API_KEY }}
+      - name: install jq
+        run: sudo apt install jq
+      - name: create payload and post to api
         run: |
+          echo '{"publish": true,"content": ""}' | jq -r --arg CONTENT "$(cat now/now.md)" '.content = $CONTENT' > payload.json
+          cat payload.json
           curl --location \
             --request POST \
             --header "Authorization: Bearer ${API_KEY}" \
             "https://api.omg.lol/address/${ADDRESS}/now" \
-            --data '{"listed": "1", "content": '"$(cat now/now.md)"'}'
+            --data-binary "@payload.json"
 
             
