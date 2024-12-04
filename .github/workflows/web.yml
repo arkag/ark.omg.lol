@@ -19,7 +19,7 @@ jobs:
           ADDRESS: ${{ vars.OMG_LOL_NAME }}
           API_KEY: ${{ secrets.OMG_LOL_API_KEY }}
         run: |
-          echo "{\"publish\": true, \"content\": \"$(xxd -b web/profile.md)\"}" > payload.json
+          echo "{\"publish\": true, \"content\": \"$(cat web/profile.md)\"}" > payload.json
           cat payload.json
           curl --location \
             --request POST \
