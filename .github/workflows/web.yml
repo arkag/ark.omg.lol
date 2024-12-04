@@ -17,7 +17,7 @@ jobs:
         with:
           fetch-depth: 2
       - name: install jq
-        run: apt install jq
+        run: sudo apt install jq
       - name: web_import
         env:
           ADDRESS: ${{ vars.OMG_LOL_NAME }}
