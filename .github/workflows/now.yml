@@ -8,6 +8,10 @@ on:
       - .github/workflows/now.yml
       - now/*
 
+env:
+  ADDRESS: ${{ vars.OMG_LOL_NAME }}
+  API_KEY: ${{ secrets.OMG_LOL_API_KEY }}
+
 jobs:
   web_import:
     runs-on: ubuntu-latest
@@ -20,7 +24,7 @@ jobs:
         run: sudo apt install jq
       - name: create payload and post to api
         run: |
-          echo '{"publish": true,"content": ""}' | jq -r --arg CONTENT "$(cat now/now.md)" '.content = $CONTENT' > payload.json
+          echo '{"listed": "1","content": ""}' | jq -r --arg CONTENT "$(cat now/now.md)" '.content = $CONTENT' > payload.json
           cat payload.json
           curl --location \
             --request POST \
