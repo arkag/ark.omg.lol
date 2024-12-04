@@ -1,12 +1,12 @@
-name: Update Webblog
+name: Update blog
 
 on: 
   push:
     branches:
       - main
     paths:
-      - .github/workflows/webblog.yml
-      - webblog/*
+      - .github/workflows/blog.yml
+      - blog/**/*
 
 env:
   ADDRESS: ${{ vars.OMG_LOL_NAME }}
