@@ -1,17 +1,21 @@
-<ul id="navbar-ul">
-  <li id="navbar-li"><a rel="me" href="https://alex.kagno.com/">Home</a></li>
-  <li id="navbar-li"> | </li>
-  <li id="navbar-li"><a rel="me" href="https://alex.kagno.com/blog">Blog</a></li>
-  <li id="navbar-li"> | </li>
-  <li id="navbar-li"><a rel="me" href="https://alex.kagno.com/resume">Resume</a></li>
+<div class="navbar">
+<ul>
+  <li><a rel="me" href="https://alex.kagno.com/">Home</a></li>
+  <li> | </li>
+  <li><a rel="me" href="https://alex.kagno.com/blog">Blog</a></li>
+  <li> | </li>
+  <li><a rel="me" href="https://alex.kagno.com/resume">Resume</a></li>
 </ul>
+</div>
 <style>
-#navbar-li {
-  display: inline;
-}
-#navbar-ul {
-  text-align: center;
-  margin: 0 auto;
+.navbar {
+  li {
+    display: inline;
+  }
+  ul {
+    text-align: center;
+    margin: 0 auto;
+  }
 }
 </style>
 
