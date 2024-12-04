@@ -24,7 +24,6 @@ jobs:
           API_KEY: ${{ secrets.OMG_LOL_API_KEY }}
         run: |
           jq -r --arg CONTENT "$(cat web/profile.md)" '.content = $CONTENT' web/payload.json
-          cat payload.json
           curl --location \
             --request POST \
             --header "Authorization: Bearer ${API_KEY}" \
