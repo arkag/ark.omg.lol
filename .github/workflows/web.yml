@@ -20,14 +20,10 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 2
-      - name: install jq
-        run: sudo apt install jq
       - name: create payload and post to api
         run: |
-          echo '{"publish": true,"content": ""}' | jq -r --arg CONTENT "$(cat web/profile.md)" '.content = $CONTENT' > payload.json
-          cat payload.json
           curl --location \
             --request POST \
             --header "Authorization: Bearer ${API_KEY}" \
             "https://api.omg.lol/address/${ADDRESS}/web" \
-            --data-binary "@payload.json"
+            --data '{"publish": true, "content": '"$(printf \"%q\" $(cat web/profile.md))"'
