@@ -26,4 +26,4 @@ jobs:
             --request POST \
             --header "Authorization: Bearer ${API_KEY}" \
             "https://api.omg.lol/address/${ADDRESS}/web" \
-            --data '{"publish": true, "content": '"$(printf \"%q\" $(cat web/profile.md))"'
+            --data '{"publish": true, "content": '"$(printf \"%q\" $(cat web/profile.md))"'}'
