@@ -1,3 +1,5 @@
+name: Update Web Profile Page
+
 on: 
   push:
     branches:
@@ -14,15 +16,17 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 2
-      - id: web_import
+      - name: install jq
+        run: apt install jq
+      - name: web_import
         env:
           ADDRESS: ${{ vars.OMG_LOL_NAME }}
           API_KEY: ${{ secrets.OMG_LOL_API_KEY }}
         run: |
-          echo "{\"publish\": true, \"content\": \"$(cat web/profile.md)\"}" > payload.json
+          jq -r --arg CONTENT "$(cat web/profile.md)" '.content = $CONTENT' web/payload.json
           cat payload.json
           curl --location \
             --request POST \
             --header "Authorization: Bearer ${API_KEY}" \
             "https://api.omg.lol/address/${ADDRESS}/web" \
-            --data-binary payload.json
+            --data-binary "@web/payload.json"
