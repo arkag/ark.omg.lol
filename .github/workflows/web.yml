@@ -24,8 +24,10 @@ jobs:
         run: sudo apt install jq
       - name: create payload and post to api
         run: |
+          jq -c -r --arg CONTENT "$(cat web/profile.md)" '.content = $CONTENT' web/payload.json > web/payload.json
+          cat web/payload.json
           curl --location \
             --request POST \
             --header "Authorization: Bearer ${API_KEY}" \
             "https://api.omg.lol/address/${ADDRESS}/web" \
-            --data "'"$(jq -r --arg CONTENT "$(cat web/profile.md)" '.content = $CONTENT' web/payload.json)"'"
+            --data-binary "'"@web/payload.json"'"
