@@ -22,4 +22,4 @@ jobs:
             --request POST \
             --header "Authorization: Bearer ${API_KEY}" \
             "https://api.omg.lol/address/${ADDRESS}/now" \
-            --data-binary "@now/now.md"
+            --data-binary "@web/profile.md"
