@@ -8,22 +8,23 @@ on:
       - .github/workflows/web.yml
       - web/*
 
+env:
+  ADDRESS: ${{ vars.OMG_LOL_NAME }}
+  API_KEY: ${{ secrets.OMG_LOL_API_KEY }}
+
 jobs:
   web_import:
     runs-on: ubuntu-latest
-    name: omg.lol
+    name: ${{ vars.OMG_LOL_NAME }}.omg.lol
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 2
       - name: install jq
         run: sudo apt install jq
-      - name: web_import
-        env:
-          ADDRESS: ${{ vars.OMG_LOL_NAME }}
-          API_KEY: ${{ secrets.OMG_LOL_API_KEY }}
+      - name: create payload and post to api
         run: |
-          jq -r --arg CONTENT "$(cat web/profile.md)" '.content = $CONTENT' web/payload.json
+          jq -r --arg CONTENT "$(cat web/profile.md)" '.content = $CONTENT' web/payload.json > web/payload.json
           curl --location \
             --request POST \
             --header "Authorization: Bearer ${API_KEY}" \
