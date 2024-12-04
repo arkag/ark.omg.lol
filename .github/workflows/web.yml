@@ -23,4 +23,4 @@ jobs:
             --request POST \
             --header "Authorization: Bearer ${API_KEY}" \
             "https://api.omg.lol/address/${ADDRESS}/web" \
-            --data '{"publish": true, "content": "'"$(cat web/profile.md)"'"}'
+            --data '{"publish": true, "content": '"$(xxd -b web/profile.md)"'}'
