@@ -151,11 +151,11 @@ form :is(input, textarea) {
 
 #### IndieWeb Config Links
 
-- Registrar: [Hover](https://hover.com/)
-- DNS: [Cloudflare](https://cloudflare.com/)
-- Email: [FastMail](https://www.fastmail.com/omglol/)
+- {link} Registrar: [Hover](https://hover.com/)
+- {link} DNS: [Cloudflare](https://cloudflare.com/)
+- {link} Email: [FastMail](https://www.fastmail.com/omglol/)
 - {link} Blog: [GitHub Pages](https://github.com/arkag/arkag.github.io) and [Hugo](https://gohugo.io/)
-- Resume: [Vercel](https://vercel.com/) and customized [nextjs-resume](https://github.com/colinhemphill/nextjs-resume)
+- {link} Resume: [Vercel](https://vercel.com/) and customized [nextjs-resume](https://github.com/colinhemphill/nextjs-resume)
 
 --- Badges ---
 
