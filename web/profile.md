@@ -52,14 +52,6 @@ Fostering collaboration through automation, one project at a time.
 - {music} <a rel="me" href="https://libre.fm/user/arkagno">Libre.fm</a>
 - {lastfm} <a rel="me" href="https://last.fm/user/juggalope">Last.fm</a>
 
-## Writings
-
-- {pen-nib} <a rel="me" href="https://blog.alex.kagno.com">Blog</a>
-
-## References
-
-- {file} <a rel="me" href="https://resume.alex.kagno.com">Resume</a>
-
 ## Proofs
 
 - proven.lol/4e46db
