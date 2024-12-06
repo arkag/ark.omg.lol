@@ -161,8 +161,7 @@ form :is(input, textarea) {
 
 - Registrar: [Hover](https://hover.com/)
 - DNS: [Cloudflare](https://cloudflare.com/)
-- Email: [PurelyMail](https://purelymail.com/)
-- Filtering: <a href="https://mxguarddog.fr/">MXGuardDog</a> 
+- Email: [FastMail](https://www.fastmail.com/omglol/)
 - {link} Blog: [GitHub Pages](https://github.com/arkag/arkag.github.io) and [Hugo](https://gohugo.io/)
 - Resume: [Vercel](https://vercel.com/) and customized [nextjs-resume](https://github.com/colinhemphill/nextjs-resume)
 
