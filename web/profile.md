@@ -22,6 +22,12 @@
 ---
 
 {profile-picture}
+<style>
+#profile-picture {
+  border: 2px solid rgb(49, 50, 68);
+  border-radius: 100%; 
+}
+</style>
 
 # Alex Kagno
 
