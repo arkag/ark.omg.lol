@@ -174,6 +174,5 @@ form :is(input, textarea) {
 
 --- Mastodon Feed ---
 
-<a class="mastodon-feed" href="https://social.lol/@ark" data-toot-limit="1">follow me into the Fediverse</a>
+<a class="mastodon-feed" href="https://social.lol/@ark" data-toot-limit="1"></a>
 <script type="module" src="https://esm.sh/emfed@1"></script>
-<link rel="stylesheet" type="text/css" href="https://esm.sh/emfed@1/toots.css">
