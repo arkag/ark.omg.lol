@@ -171,3 +171,9 @@ form :is(input, textarea) {
 <a href="https://people.pledge.party">
 <img src="https://people.pledge.party/badges/people_pledge_badge_oldschool_pink_cream.svg" width="160" height="30">
 </a>
+
+--- Mastodon Feed ---
+
+<a class="mastodon-feed" href="https://social.lol/@ark" data-toot-limit="1">follow me into the Fediverse</a>
+<script type="module" src="https://esm.sh/emfed@1"></script>
+<link rel="stylesheet" type="text/css" href="https://esm.sh/emfed@1/toots.css">
