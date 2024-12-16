@@ -48,7 +48,7 @@ Fostering collaboration through automation, one project at a time.
 ## Socials
 
 - {xmpp} ark@omg.lol
-- {signal} <a rel="me" href="https://signal.me/#eu/xMxCyd4kRhyrSzy6ptPAM3kKNiGaVaz8qxfqJXTlbVoSEqJGkVJIu6VZDfr7tPdE">ark.95</a>
+- {signal-app} <a rel="me" href="https://signal.me/#eu/xMxCyd4kRhyrSzy6ptPAM3kKNiGaVaz8qxfqJXTlbVoSEqJGkVJIu6VZDfr7tPdE">ark.95</a>
 - {mastodon} <a rel="me" href="https://social.lol/@ark">@ark:social.lol</a>
 - {linkedin} <a rel="me" href="https://www.linkedin.com/in/arkagno">Alex Kagno</a>
 - {github} <a rel="me" href="https://github.com/arkag">arkag</a>
