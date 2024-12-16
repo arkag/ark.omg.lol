@@ -47,12 +47,12 @@ Fostering collaboration through automation, one project at a time.
 
 ## Socials
 
+- {xmpp} ark@omg.lol
 - {mastodon} <a rel="me" href="https://social.lol/@ark">@ark:social.lol</a>
 - {linkedin} <a rel="me" href="https://www.linkedin.com/in/arkagno">Alex Kagno</a>
 - {github} <a rel="me" href="https://github.com/arkag">arkag</a>
 
 ## Music
-
 
 - {youtube} <a rel="me" href="https://music.youtube.com/playlist?list=PLzgddCJiPqyLzw2VS2Bqmh-C4Bre022Q6">_The Playlist_</a>
 - {music} <a rel="me" href="https://libre.fm/user/arkagno">Libre.fm</a>
