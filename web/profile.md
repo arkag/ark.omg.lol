@@ -52,6 +52,7 @@ Fostering collaboration through automation, one project at a time.
 - {mastodon} <a rel="me" href="https://social.lol/@ark">@ark:social.lol</a>
 - {linkedin} <a rel="me" href="https://www.linkedin.com/in/arkagno">Alex Kagno</a>
 - {github} <a rel="me" href="https://github.com/arkag">arkag</a>
+- {keyboard} <a rel="me" href="https://monkeytype.com/profile/arkagno">arkagno</a>
 
 ## Music
 
