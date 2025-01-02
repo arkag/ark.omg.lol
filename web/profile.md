@@ -43,7 +43,7 @@ Fostering collaboration through automation, one project at a time.
 
 <a class="mastodon-feed" href="https://social.lol/@ark" data-toot-limit="1">follow me into the Fediverse</a>
 <script type="module" src="https://esm.sh/emfed@1"></script>
-<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/arkag/ark.omg.lol/refs/heads/main/css/toots.css">
+<link rel="stylesheet" href="https://raw.githubusercontent.com/arkag/ark.omg.lol/refs/heads/main/css/toots.css">
 
 --- Profile Items ---
 
