@@ -39,9 +39,21 @@
 
 Fostering collaboration through automation, one project at a time.
 
-#### [Status](https://status.lol/ark)
+#### [Toots](https://social.lol/@ark)
 
-<script rel="me" src="https://status.lol/ark.js?"></script>
+<a class="mastodon-feed" href="https://social.lol/@ark" data-toot-limit="1">follow me into the Fediverse</a>
+<script type="module" src="https://esm.sh/emfed@1"></script>
+<link rel="stylesheet" type="text/css" href="https://esm.sh/emfed@1.6.0/toots.css">
+<style>
+  .toot .permalink {
+    display: flex;
+    font-size: 90%;
+    color: inherit;
+  }
+  .toot .user {
+    font-size: 90%;
+  }
+</style>
 
 --- Profile Items ---
 
@@ -173,9 +185,3 @@ form :is(input, textarea) {
 <a href="https://people.pledge.party">
 <img src="https://people.pledge.party/badges/people_pledge_badge_oldschool_pink_cream.svg" width="160" height="30">
 </a>
-
---- Mastodon Feed ---
-
-<a class="mastodon-feed" href="https://social.lol/@ark" data-toot-limit="1">follow me into the Fediverse</a>
-<script type="module" src="https://esm.sh/emfed@1"></script>
-<link rel="stylesheet" type="text/css" href="https://esm.sh/emfed@1.6.0/toots.css">
