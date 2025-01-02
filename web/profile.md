@@ -49,11 +49,9 @@ Fostering collaboration through automation, one project at a time.
   padding: 10px;
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
 }
-
 .toot {
   padding: 1rem;
 }
-
 /* Posting user. */
 .toot .user {
   display: flex;
@@ -62,66 +60,53 @@ Fostering collaboration through automation, one project at a time.
   align-content: flex-start;
   height: 46px;  /* Avatar height. */
   column-gap: 0.5rem;
-
   text-decoration: none;
   color: inherit;
 }
-
 .toot .avatar {
   border-radius: 4px;
 }
-
 .toot .display-name {
   font-weight: bold;
   display: block;
 }
-
 .toot .user:hover .display-name {
   text-decoration: underline;
 }
-
 .toot .username {
   display: block;
   margin-right: 1em;
   color: inherit;
 }
-
 /* Boosting user is smaller and above the posting user. */
 .toot .boost {
   height: 23px;
   margin-bottom: 0.25rem;
   column-gap: 0.25rem;
 }
-
 .toot .boost:before {
   content: "♺";
   font-size: 140%;
 }
-
 .toot .boost .username {
   display: none;
 }
-
 .toot .permalink {
   text-decoration: none;
   display: block;
   color: inherit;
   float: right;
 }
-
 .toot .permalink:hover {
   text-decoration: underline;
 }
-
 .toot .body {
   clear: both;
   margin-top: 1em;
 }
-
 .toot .body a {
   overflow-wrap: anywhere;
 }
-
 /* Weird trick to keep the text in the page but not display it. */
 .toot .body .invisible {
   display: inline-block;
@@ -131,18 +116,15 @@ Fostering collaboration through automation, one project at a time.
   height: 0;
   position: absolute;
 }
-
 .toot .body .ellipsis::after {
   content: "…";
 }
-
 .toot .attachment {
   display: block;
   width: 100%;
   aspect-ratio: 16 / 9;
   border-radius: 4px;
 }
-
 .toot .attachment img {
   width: 100%;
   height: 100%;
