@@ -52,12 +52,12 @@ Feed post count: 25
 
 Post path format: /Y/m/
 Default post: <<[---
+Title: Your new post
+Summary: A short description of your post for those on other platforms
+Tags: blogging, another-tag, a-third-tag
 Date: $date
 ---
 
-# Your new post
-
-This is a new blog post. You can author it in _Markdown_, which is **awesome**.
 ]>>
 
 Titleless title length: 15 words
