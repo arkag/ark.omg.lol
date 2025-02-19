@@ -1,0 +1,151 @@
+// Weblog Configuration
+
+;; About your weblog
+;; -----------------
+
+Weblog title: A Piece of the Void
+Weblog description: Thoughts, rants, etc. from yours truly.
+Author: Alex Kagno
+Canonical domain: blog.alex.kagno.com
+// Landing page: /
+Landing page template: Landing Page Template
+
+
+;; General config stuff
+;; --------------------
+
+Separator:  · 
+// Navigation: about, another-page, <a href="https://example.com">Example</a>, [Example](https://example.com)
+Navigation: [Home](https://alex.kagno.com), [Toots](https://social.lol/@ark), [Resume](https://resume.alex.kagno.com)
+Files path: /files/
+Landing page post count: 1
+// Landing page post length: 45 words
+Post template: Post Template
+
+
+;; Pagination
+;; ----------
+
+Pagination path: /page/
+Previous page template: <span class="previous-page"><a href="$previous_page">← Previous Page</a></span>
+Next page template: <span class="next-page"><a href="$next_page">Next Page →</a></span>
+
+
+;; Time stuff
+;; ----------
+
+; You can use a timezone value from the "TZ database name" column on this 
+; web page: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+Timezone: MST
+Date format: F j, Y g:i A
+
+
+;; Feeds
+;; -----
+
+Feed post count: 25
+// Feed post appendix: <p><em>Published with weblog.lol!</em></p>
+
+
+;; Posts
+;; -----
+
+Post path format: /Y/m/
+Default post: <<[---
+Date: $date
+---
+
+# Your new post
+
+This is a new blog post. You can author it in _Markdown_, which is **awesome**.
+]>>
+
+Titleless title length: 15 words
+// Truncation appendix:  […]
+// Title format: <h1><a href="$permalink">$title</a></h1>
+
+Multiple posts count: 10
+Multiple posts format: <<[
+[post:begin]
+<article>
+  {body}
+  <aside class="post-info">
+    <i class="fa-solid fa-clock"></i> {date}
+  </aside>
+  <aside class="post-tags">
+    {tags}
+  </aside>
+</article>
+[post:end]
+]>>
+
+;; Recent posts {recent-posts}
+;; ---------------------------
+
+Recent posts count: 5
+Recent posts format: <<[
+<ul>
+[post:begin]<li><a href="$location">$title</a></li>[post:end]
+</ul>]>>
+
+
+;; Post list {post-list}
+;; ---------------------
+
+Post list format: <<[
+<ul>
+[post:begin]<li><a href="$location">$title</a></li>[post:end]
+</ul>]>>
+
+
+;; Page list {page-list}
+;; ---------------------
+
+Page list format: <<[
+<ul>
+[page:begin]<li><a href="$location">$title</a></li>[page:end]
+</ul>]>>
+
+
+;; Search
+;; ------
+
+Search status: enabled
+Search template: Page Template
+Search results success message: There [is|are] $count [result|results] for your search:
+Search results failure message: There were no results found for your search.
+Search results format: <<[
+<h2>Results for “$search”</h2>
+<p>$search_results_message</p>
+[post:begin]<h3><a href="$location">$title</a></h3>
+<p>$date</p>
+<p>$snippet</p>[post:end]
+]>>
+
+
+;; Tags {tags}
+;; -----------
+
+Tag path: /tag/
+// Tag page template: Tag Template
+Tags format: <<[
+[tag:begin]<a class="tag" href="$tag_location">$tag</a>[tag:end]
+]>>
+Tag page format: <<[
+<h2>Posts tagged with “$tag”</h2>
+<ul>
+[tag:begin]<li><a href="$location">$title</a></li>[tag:end]
+</ul>
+]>>
+
+Tag listing path: /tags
+// Tag listing template: Tag Listing Template
+// Note: tag listing order can be "alphabetical", "ascending", or "descending" where alphabetical sorts by the tag name and ascending/descending sorts by the count of entries with that tag
+Tag listing order: alphabetical
+Tag listing format: <<[
+<h2>Tags</h2>
+<ul>
+[tag:begin]<li><a href="$location">$tag</a> ($count)</li>[tag:end]
+</ul>
+]>>

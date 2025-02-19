@@ -1,0 +1,50 @@
+name: Update Weblog
+
+on: 
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/weblog.yml
+      - weblog/*
+
+env:
+  ADDRESS: ${{ vars.OMG_LOL_NAME }}
+  API_KEY: ${{ secrets.OMG_LOL_API_KEY }}
+
+jobs:
+  weblog_configuration:
+    runs-on: ubuntu-latest
+    name: Update ${{ vars.OMG_LOL_NAME }}.weblog.lol Configuration
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: upload configuration to api
+        run: |
+          curl --location \
+            --request POST \
+            --header "Authorization: Bearer ${API_KEY}" \
+            "https://api.omg.lol/address/${ADDRESS}/weblog/configuration" \
+            --data "$(cat weblog/configuration.md)"
+
+  weblog_templates:
+    runs-on: ubuntu-latest
+    name: Update ${{ vars.OMG_LOL_NAME }}.weblog.lol Templates
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: upload template to api
+        run: |
+          templates_dir="weblog/templates"
+          for template in $(find $templates_dir -iname '*.md');
+          do
+              echo "Updating $template on omg.lol"
+              curl --location \
+                --request POST \
+                --header "Authorization: Bearer ${API_KEY}" \
+                "https://api.omg.lol/address/${ADDRESS}/weblog/template" \
+                --data "$(cat $template)"
+          done
+          
