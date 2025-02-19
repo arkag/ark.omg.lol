@@ -15,8 +15,7 @@ Landing page template: Landing Page Template
 ;; --------------------
 
 Separator:  · 
-// Navigation: about, another-page, <a href="https://example.com">Example</a>, [Example](https://example.com)
-Navigation: [Home](https://alex.kagno.com), [Toots](https://social.lol/@ark), [Resume](https://resume.alex.kagno.com)
+Navigation: [Home](https://alex.kagno.com), [Blog](https://ark.weblog.lol), [Resume](https://resume.alex.kagno.com)
 Files path: /files/
 Landing page post count: 1
 // Landing page post length: 45 words
