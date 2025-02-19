@@ -6,7 +6,7 @@
 Weblog title: A Piece of the Void
 Weblog description: Thoughts, rants, etc. from yours truly.
 Author: Alex Kagno
-Canonical domain: blog.alex.kagno.com
+Canonical domain: alex.kagno.com
 // Landing page: /
 Landing page template: Landing Page Template
 
