@@ -6,8 +6,8 @@
 Weblog title: A Piece of the Void
 Weblog description: Thoughts, rants, etc. from yours truly.
 Author: Alex Kagno
-// Canonical domain: alex.kagno.com
-// Landing page: /
+Canonical domain: alex.kagno.com
+Landing page: /
 Landing page template: Landing Page Template
 
 
@@ -15,12 +15,11 @@ Landing page template: Landing Page Template
 ;; --------------------
 
 Separator:  · 
-Navigation: [Home](https://alex.kagno.com), [Blog](https://ark.weblog.lol), [Resume](https://resume.alex.kagno.com)
+Navigation: [Home](https://alex.kagno.com), [Blog](https://alex.kagno.com/blog), [Resume](https://alex.kagno.com/resume)
 Files path: /files/
 Landing page post count: 1
 // Landing page post length: 45 words
 Post template: Post Template
-
 
 ;; Pagination
 ;; ----------
@@ -50,7 +49,7 @@ Feed post count: 25
 ;; Posts
 ;; -----
 
-Post path format: /Y/m/
+Post path format: /\b\l\o\g/
 Default post: <<[---
 Title: Your new post
 Summary: A short description of your post for those on other platforms
@@ -148,3 +147,14 @@ Tag listing format: <<[
 [tag:begin]<li><a href="$location">$tag</a> ($count)</li>[tag:end]
 </ul>
 ]>>
+
+;; Custom config
+;; -------------
+
+Discuss on mastodon: <mastodon-post><h3 class="u-spacing--top"><i class="fa-brands fa-mastodon"></i><a href="$postURL" rel="me">Discuss on Mastodon</a></h3></mastodon-post>
+
+
+; Custom template (advanced) variables
+;; -----------------------------------
+
+Discuss on mastodon template: <figure class="mastodon-post"><blockquote class="mastodon-post__quote" data-key="content"></blockquote><figcaption class="mastodon-post__caption"><cite> — <a data-key="url" rel="me"><span data-key="username"></span>@<span data-key="hostname"></span></a></cite><dl class="mastodon-post__stats"><div class="mastodon-post__stat"><dt><i class="fa-solid fa-retweet u-color--purple u-gap--right"></i>Reposts</dt><dd data-key="reblogs_count"></dd></div><div class="mastodon-post__stat"><dt><i class="fa-solid fa-comment u-color--purple u-gap--right"></i>Replies</dt><dd data-key="replies_count"></dd></div><div class="mastodon-post__stat"><dt><i class="fa-solid fa-star u-color--purple u-gap--right"></i>Favorites</dt><dd data-key="favourites_count"></dd></div></dl></figcaption></figure>
