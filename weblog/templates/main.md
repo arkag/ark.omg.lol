@@ -13,7 +13,29 @@
     @import url('https://static.omg.lol/type/font-md-io.css');
     @import url('https://static.omg.lol/type/fontawesome-free/css/all.css');
 
-    <link rel="preload" href="https://cdn.themes.lol/styles/assets/css/styles--vinca-styles.css?05042024" as="style" fetchpriority="high">
+    :root {
+      --foreground: #4c4f69;
+      /* Catppuccin Latte: Text */
+      --background: #eff1f5;
+      /* Catppuccin Latte: Base */
+      --link: #1e66f5;
+      /* Catppuccin Latte: Blue */
+      --accent: #9ca0b0;
+      /* Catppuccin Latte: Overlay1 */
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --foreground: #cdd6f4;
+        /* Catppuccin Mocha: Text */
+        --background: #1e1e2e;
+        /* Catppuccin Mocha: Base */
+        --link: #89b4fa;
+        /* Catppuccin Mocha: Blue */
+        --accent: #7f849c;
+        /* Catppuccin Mocha: Overlay1 */
+      }
+    }
 
     * {
       box-sizing: border-box;
