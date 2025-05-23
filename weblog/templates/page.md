@@ -15,21 +15,7 @@ Title: Page Template
 @import url('https://static.omg.lol/type/font-md-io.css');
 @import url('https://static.omg.lol/type/fontawesome-free/css/all.css');
 
-:root {
-	--foreground: #212529;
-	--background: #f8f9fa;
-	--link: #0b7285;
-	--accent: #868e96;
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--foreground: #eee;
-		--background: #222;
-		--link: #99e9f2;
-		--accent: #ced4da;
-	}
-}
+<link rel="preload" href="https://cdn.themes.lol/styles/assets/css/styles--vinca-styles.css?05042024" as="style" fetchpriority="high">
 
 * {
 	box-sizing: border-box;
