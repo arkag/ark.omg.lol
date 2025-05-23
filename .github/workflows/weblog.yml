@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - .github/workflows/weblog.yml
-      - weblog/*
+      - weblog/**/*
 
 env:
   ADDRESS: ${{ vars.OMG_LOL_NAME }}
