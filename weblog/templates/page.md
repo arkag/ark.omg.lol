@@ -15,8 +15,6 @@ Title: Page Template
 @import url('https://static.omg.lol/type/font-md-io.css');
 @import url('https://static.omg.lol/type/fontawesome-free/css/all.css');
 
-<link rel="preload" href="https://cdn.themes.lol/styles/assets/css/styles--vinca-styles.css?05042024" as="style" fetchpriority="high">
-
 * {
 	box-sizing: border-box;
 }
@@ -142,6 +140,7 @@ td, th {
 }
 
 </style>
+<link rel="preload" href="https://cdn.themes.lol/styles/assets/css/styles--vinca-styles.css?05042024" as="style" fetchpriority="high">
 </head>
 <body>
 
