@@ -5,15 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {feeds}
-  {custom-lol-theme}
-  {custom-lol-preload}
-  {custom-lol-fonts}
-  {custom-lol-vendor-1}
-  {custom-lol-domain}
-  {custom-lol-base}
-  {custom-lol-component}
-  {custom-lol-vendor-2}
-  {custom-lol-theme-picker}
 </head>
 
 <body>
