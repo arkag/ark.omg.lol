@@ -22,11 +22,6 @@
 
 Fostering collaboration through automation, one project at a time.
 
-#### [Toots](https://social.lol/@ark)
-
-<a class="mastodon-feed" href="https://social.lol/@ark" data-toot-limit="1">follow me into the Fediverse</a>
-<script type="module" src="https://esm.sh/emfed@1"></script>
-
 --- Profile Items ---
 
 ## Socials
@@ -58,19 +53,7 @@ Fostering collaboration through automation, one project at a time.
 
 ## Contact
 
-<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xwpkqldd" method="post">
-  <fieldset id="fs-frm-inputs">
-    <label for="full-name">Full Name</label>
-    <input type="text" name="name" id="full-name" placeholder="Your name" required="">
-    <label for="email-address">Email Address</label>
-    <input type="email" name="_replyto" id="email-address" placeholder="Your email" required="">
-    <label for="email-subject">Subject</label>
-    <input type="subject" name="_subject" id="email-subject" placeholder="Your subject">
-    <label for="message">Message</label>
-    <textarea rows="5" name="message" id="message" placeholder="Your message" required=""></textarea>
-  </fieldset>
-  <input type="submit" value="Submit">
-</form>
+<script data-letterbirduser="alex-6f4dbd45" src="https://letterbird.co/embed/v1.js"></script>
 
 ---
 
