@@ -5,10 +5,11 @@
 }
 
 .navbar ul {
-  display: flex;
+  display: flex !important;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  flex-direction: row;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -16,7 +17,7 @@
 }
 
 .navbar li {
-  display: flex;
+  display: inline-flex;
   align-items: center;
 }
 
@@ -25,6 +26,7 @@
   padding: 0.5rem 1rem;
   border-radius: 4px;
   transition: background-color 0.2s ease;
+  white-space: nowrap;
 }
 
 .navbar a:hover {
@@ -33,7 +35,7 @@
 
 @media (max-width: 600px) {
   .navbar ul {
-    flex-direction: column;
+    flex-direction: column !important;
     gap: 0.25rem;
   }
 
