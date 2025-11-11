@@ -1,43 +1,44 @@
-/* Cute lil' Navbar */
+/* Cute lil' Navbar - Force horizontal layout */
 .navbar {
-  width: 100%;
-  margin-bottom: 1rem;
-  text-align: center;
+  width: 100% !important;
+  margin-bottom: 1rem !important;
+  text-align: center !important;
 }
 
 .navbar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: block;
+  list-style: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block !important;
 }
 
 .navbar li {
-  display: inline-block;
-  margin: 0 0.25rem;
+  display: inline-block !important;
+  margin: 0 0.25rem !important;
+  vertical-align: top !important;
 }
 
 .navbar a {
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  transition: background-color 0.2s ease;
-  white-space: nowrap;
-  display: inline-block;
+  text-decoration: none !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 4px !important;
+  transition: background-color 0.2s ease !important;
+  white-space: nowrap !important;
+  display: inline-block !important;
 }
 
 .navbar a:hover {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.1) !important;
 }
 
 @media (max-width: 600px) {
   .navbar li {
-    display: block;
-    margin: 0.25rem 0;
+    display: block !important;
+    margin: 0.25rem 0 !important;
   }
 
   .navbar li:nth-child(even) {
-    display: none;
+    display: none !important;
   }
 }
 
