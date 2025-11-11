@@ -24,7 +24,7 @@ jobs:
         run: sudo apt install jq
       - name: create payload and post to api
         run: |
-          echo '{"publish": true,"content": "","css":""}' | jq -r --arg CONTENT "$(cat web/profile.md)" '.content = $CONTENT' | jq -r --arg STYLE "$(cat web/style.css)" '.css = $STYLE' > payload.json
+          echo '{"publish": true,"content": "","css":""}' | jq -r --arg CONTENT "$(cat web/profile.md)" '.content = $CONTENT' | jq -r --arg STYLE "$(cat web/styles.css)" '.css = $STYLE' > payload.json
           cat payload.json
           curl --location \
             --request POST \
