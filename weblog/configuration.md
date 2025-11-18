@@ -151,12 +151,5 @@ Tag listing format: <<[
 ;; Custom config
 ;; -------------
 
-Preload nebula sans: <link rel="preload" href="https://cdn.kagno.com/fonts/NebulaSans-Bold.ttf" as="font" type="font/ttf" fetchpriority="high" crossorigin><link rel="preload" href="https://cdn.kagno.com/fonts/NebulaSans-Regular.ttf" as="font" type="font/ttf" fetchpriority="high" crossorigin><link rel="preload" href="https://cdn.kagno.com/fonts/NebulaSans-Light.ttf" as="font" type="font/ttf" crossorigin>
-
-Use nebula sans: <style>font-family: NebulaSans;</style>
-
-<!-- Discuss on mastodon: <mastodon-post><h3 class="u-spacing--top"><i class="fa-brands fa-mastodon"></i><a href="$postURL" rel="me">Discuss on Mastodon</a></h3></mastodon-post> -->
-
-
 ; Custom template (advanced) variables
 ;; -----------------------------------

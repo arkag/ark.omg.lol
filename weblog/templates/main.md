@@ -4,8 +4,6 @@
   <title>{weblog-title}{separator}{post-title}</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {preload-nebula-sans}
-  {use-nebula-sans}
   {feeds}
 </head>
 
