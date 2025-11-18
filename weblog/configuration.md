@@ -151,18 +151,12 @@ Tag listing format: <<[
 ;; Custom config
 ;; -------------
 
-Custom lol theme: <meta name="theme-color" media="(prefers-color-scheme: light)" content="#472A49"> <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#C1C1F7"> <meta name="color-scheme" content="light dark">
-
 Preload nebula sans: <link rel="preload" href="https://cdn.kagno.com/fonts/NebulaSans-Bold.ttf" as="font" type="font/ttf" fetchpriority="high" crossorigin><link rel="preload" href="https://cdn.kagno.com/fonts/NebulaSans-Regular.ttf" as="font" type="font/ttf" fetchpriority="high" crossorigin><link rel="preload" href="https://cdn.kagno.com/fonts/NebulaSans-Light.ttf" as="font" type="font/ttf" crossorigin>
 
 Use nebula sans: <style>font-family: NebulaSans;</style>
-
-Custom lol theme picker: <script>(function(){const Theme={AUTO:'auto',LIGHT:'light',DARK:'dark'};const THEME_STORAGE_KEY='theme';const THEME_OWNER=document.documentElement;const cachedTheme=localStorage.getItem(THEME_STORAGE_KEY);if(cachedTheme){THEME_OWNER.dataset[THEME_STORAGE_KEY]=cachedTheme}document.addEventListener('DOMContentLoaded',()=>{const themePicker=document.getElementById('theme-picker');if(!themePicker){return}themePicker.addEventListener('change',(e)=>{const theme=e.target.value;if(theme===Theme.AUTO){delete THEME_OWNER.dataset[THEME_STORAGE_KEY];localStorage.removeItem(THEME_STORAGE_KEY)}else{THEME_OWNER.dataset[THEME_STORAGE_KEY]=theme;localStorage.setItem(THEME_STORAGE_KEY,theme)}});const initialTheme=cachedTheme??Theme.AUTO;themePicker.querySelector('input[checked]').removeAttribute('checked');themePicker.querySelector(`input[value="${ initialTheme }"]`).setAttribute('checked','')})})();</script>
 
 <!-- Discuss on mastodon: <mastodon-post><h3 class="u-spacing--top"><i class="fa-brands fa-mastodon"></i><a href="$postURL" rel="me">Discuss on Mastodon</a></h3></mastodon-post> -->
 
 
 ; Custom template (advanced) variables
 ;; -----------------------------------
-
-<!-- Discuss on mastodon template: <figure class="mastodon-post"><blockquote class="mastodon-post__quote" data-key="content"></blockquote><figcaption class="mastodon-post__caption"><cite> — <a data-key="url" rel="me"><span data-key="username"></span>@<span data-key="hostname"></span></a></cite><dl class="mastodon-post__stats"><div class="mastodon-post__stat"><dt><i class="fa-solid fa-retweet u-color--purple u-gap--right"></i>Reposts</dt><dd data-key="reblogs_count"></dd></div><div class="mastodon-post__stat"><dt><i class="fa-solid fa-comment u-color--purple u-gap--right"></i>Replies</dt><dd data-key="replies_count"></dd></div><div class="mastodon-post__stat"><dt><i class="fa-solid fa-star u-color--purple u-gap--right"></i>Favorites</dt><dd data-key="favourites_count"></dd></div></dl></figcaption></figure> -->

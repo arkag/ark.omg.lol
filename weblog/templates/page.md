@@ -9,8 +9,6 @@ Title: Page Template
 {preload-nebula-sans}
 {use-nebula-sans}
 {feeds}
-{custom-lol-theme}
-{custom-lol-theme-picker}
 </head>
 <body>
 
