@@ -15,7 +15,7 @@ Landing page template: Landing Page Template
 ;; --------------------
 
 Separator:  · 
-Navigation: [Home](https://alex.kagno.com), [Blog](https://alex.kagno.com/blog), [Resume](https://alex.kagno.com/resume)
+Navigation: [Home](https://alex.kagno.com), [Blog](https://alex.kagno.com/blog), [Resume](https://resume.alex.kagno.com)
 Files path: /files/
 Landing page post count: 1
 // Landing page post length: 45 words
