@@ -63,10 +63,10 @@
 </footer>
 
 <!-- Discuss on Mastodon -->
-<template id="mastodon-post-template">
+<!-- <template id="mastodon-post-template">
 {discuss-on-mastodon-template}
 </template>
-<script type="module" src="/mastodon-post.js" defer></script>
+<script type="module" src="/mastodon-post.js" defer></script> -->
 
 </body>
 
