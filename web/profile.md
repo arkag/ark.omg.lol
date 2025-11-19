@@ -1,3 +1,5 @@
+# Alex Kagno
+
 <div class="navbar">
 <ul>
   <li><a rel="me" href="https://alex.kagno.com/">Home</a></li>
@@ -8,11 +10,7 @@
 </ul>
 </div>
 
----
-
 {profile-picture}
-
-# Alex Kagno
 
 | Pronouns: he/him
 | Occupation: IT Automation Specialist
