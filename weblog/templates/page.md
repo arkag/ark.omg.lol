@@ -124,7 +124,7 @@ Title: Page Template
       max-width: 60em;
       width: 100%;
       margin: 2em auto;
-      padding: 2em;
+      padding: 4em 2em 2em;
       box-sizing: border-box;
       background: var(--container-bg);
       border-radius: 1em;
@@ -240,6 +240,9 @@ Title: Page Template
 
     .weblog-title {
       text-align: center;
+      font-family: 'Lato', sans-serif;
+      font-weight: 900;
+      font-size: 2em;
     }
 
     .weblog-title a {
