@@ -33,7 +33,7 @@ Fostering collaboration through automation, one project at a time.
 
 ## Music
 
-- {youtube} <a rel="me" href="https://tunes.kagno.com">Maloja</a>
+- {music} <a rel="me" href="https://tunes.kagno.com">Maloja</a>
 - {music} <a rel="me" href="https://libre.fm/user/arkagno">Libre.fm</a>
 - {lastfm} <a rel="me" href="https://last.fm/user/juggalope">Last.fm</a>
 
