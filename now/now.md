@@ -35,7 +35,7 @@
 - {link} Registrar: [Hover](https://hover.com/)
 - {link} DNS: [Cloudflare](https://cloudflare.com/)
 - {link} Email: [FastMail](https://www.fastmail.com/omglol/)
-- {link} Blog: [GitHub Pages](https://github.com/arkag/arkag.github.io) and [Hugo](https://gohugo.io/)
+- {link} Blog: [Weblog.lol](https://weblog.lol)
 - {link} Resume: [Vercel](https://vercel.com/) and customized [nextjs-resume](https://github.com/colinhemphill/nextjs-resume)
 
 ---
