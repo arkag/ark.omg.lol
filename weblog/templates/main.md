@@ -48,20 +48,49 @@
       background: var(--background);
     }
 
-    header nav ul {
-      list-style-type: none;
+    /* Cute lil' Navbar */
+    .navbar {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    .navbar ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      list-style: none;
       margin: 0;
       padding: 0;
+      gap: 0.5rem;
     }
 
-    header nav li {
-      display: inline-block;
+    .navbar li {
+      display: flex;
+      align-items: center;
     }
 
-    header nav li a {
-      display: block;
+    .navbar a {
       text-decoration: none;
-      margin-right: 1em;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: background-color 0.2s ease;
+    }
+
+    .navbar a:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 600px) {
+      .navbar ul {
+        flex-direction: column;
+        gap: 0.25rem;
+      }
+
+      .navbar li:nth-child(even) {
+        display: none;
+        /* Hide separators on mobile */
+      }
     }
 
     h1,
@@ -189,7 +218,15 @@
 
   <header>
     <h1 class="weblog-title"><a href="{base-path}">{weblog-title}</a></h1>
-    {navigation}
+    <div class="navbar">
+      <ul>
+        <li><a rel="me" href="https://alex.kagno.com/">Home</a></li>
+        <li> | </li>
+        <li><a rel="me" href="https://alex.kagno.com/blog">Blog</a></li>
+        <li> | </li>
+        <li><a rel="me" href="https://alex.kagno.com/resume">Resume</a></li>
+      </ul>
+    </div>
   </header>
 
   <main>
