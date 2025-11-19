@@ -9,10 +9,9 @@ Title: Page Template
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {feeds}
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
     @import url('https://static.omg.lol/type/font-honey.css');
-    @import url('https://static.omg.lol/type/font-lato-regular.css');
-    @import url('https://static.omg.lol/type/font-lato-bold.css');
-    @import url('https://static.omg.lol/type/font-lato-italic.css');
+    @import url('https://static.omg.lol/type/font-mint-grotesk-regular.css');
     @import url('https://static.omg.lol/type/font-md-io.css');
     @import url('https://static.omg.lol/type/fontawesome-free/css/all.css');
 
@@ -49,7 +48,7 @@ Title: Page Template
     }
 
     body {
-      font-family: 'Lato', sans-serif;
+      font-family: 'Source Sans 3', sans-serif;
       font-size: 120%;
       color: var(--foreground);
       background: var(--background);
@@ -117,7 +116,7 @@ Title: Page Template
 
     p,
     li {
-      line-height: 160%;
+      line-height: 170%;
     }
 
     .container {
@@ -240,13 +239,19 @@ Title: Page Template
 
     .weblog-title {
       text-align: center;
-      font-family: 'Lato', sans-serif;
-      font-weight: 900;
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 700;
       font-size: 2em;
+      margin-top: 0;
+      margin-bottom: 0.25em;
     }
 
     .weblog-title a {
       text-decoration: none;
+      color: var(--foreground);
+    }
+
+    .navbar a {
       color: var(--foreground);
     }
 
@@ -289,12 +294,12 @@ Title: Page Template
 	</div>
 </div>
 
-    </main>
+</main>
 
-    <footer>
-      <p>Made with <a href="https://weblog.lol">weblog.lol</a>.</p>
-    </footer>
-  </div>
+<footer>
+ <p>Made with <a href="https://weblog.lol">weblog.lol</a>.</p>
+</footer>
+</div>
 
 </body>
 </html>
