@@ -21,6 +21,8 @@ Title: Page Template
       /* Catppuccin Latte: Text */
       --background: #eff1f5;
       /* Catppuccin Latte: Base */
+      --container-bg: #dce0e8;
+      /* Catppuccin Latte: Mantle (darker than base) */
       --link: #1e66f5;
       /* Catppuccin Latte: Blue */
       --accent: #9ca0b0;
@@ -33,6 +35,8 @@ Title: Page Template
         /* Catppuccin Mocha: Text */
         --background: #1e1e2e;
         /* Catppuccin Mocha: Base */
+        --container-bg: #181825;
+        /* Catppuccin Mocha: Mantle (darker than base) */
         --link: #89b4fa;
         /* Catppuccin Mocha: Blue */
         --accent: #7f849c;
@@ -49,6 +53,11 @@ Title: Page Template
       font-size: 120%;
       color: var(--foreground);
       background: var(--background);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     /* Cute lil' Navbar */
@@ -111,22 +120,41 @@ Title: Page Template
       line-height: 160%;
     }
 
+    .container {
+      max-width: 60em;
+      width: 100%;
+      margin: 2em auto;
+      padding: 2em;
+      box-sizing: border-box;
+      background: var(--container-bg);
+      border-radius: 1em;
+    }
+
     header,
     main,
     footer {
-      max-width: 60em;
-      margin: 2em auto;
-      padding: 0 1em;
+      max-width: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
     header {
-      margin-top: 4em;
+      margin-bottom: 2em;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    footer {
+      margin-top: 2em;
     }
 
     footer p {
-      margin-top: 5em;
       font-size: 90%;
-      text-align: center;
+      margin: 0;
     }
 
     a:link {
@@ -149,7 +177,7 @@ Title: Page Template
     .post-tags {
       font-size: 85%;
       color: var(--accent);
-      text-align: right;
+      text-align: center;
     }
 
     .post-info i:nth-child(2) {
@@ -210,29 +238,38 @@ Title: Page Template
       border: 1px solid var(--accent);
     }
 
+    .weblog-title {
+      text-align: center;
+    }
+
     .weblog-title a {
       text-decoration: none;
       color: var(--foreground);
+    }
+
+    main ul {
+      list-style: none;
+      padding: 0;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1 class="weblog-title"><a href="{base-path}">{weblog-title}</a></h1>
-    <div class="navbar">
-      <ul>
-        <li><a rel="me" href="https://alex.kagno.com/">Home</a></li>
-        <li> | </li>
-        <li><a rel="me" href="https://alex.kagno.com/blog">Blog</a></li>
-        <li> | </li>
-        <li><a rel="me" href="https://alex.kagno.com/resume">Resume</a></li>
-      </ul>
-    </div>
-  </header>
+  <div class="container">
+    <header>
+      <h1 class="weblog-title"><a href="{base-path}">{weblog-title}</a></h1>
+      <div class="navbar">
+        <ul>
+          <li><a rel="me" href="https://alex.kagno.com/">Home</a></li>
+          <li> | </li>
+          <li><a rel="me" href="https://alex.kagno.com/blog">Blog</a></li>
+          <li> | </li>
+          <li><a rel="me" href="https://alex.kagno.com/resume">Resume</a></li>
+        </ul>
+      </div>
+    </header>
 
-
-<main>
+    <main>
 
 {body}
 
@@ -249,7 +286,12 @@ Title: Page Template
 	</div>
 </div>
 
-</main>
+    </main>
+
+    <footer>
+      <p>Made with <a href="https://weblog.lol">weblog.lol</a>.</p>
+    </footer>
+  </div>
 
 </body>
 </html>
