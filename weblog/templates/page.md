@@ -110,7 +110,7 @@ Title: Page Template
     h4,
     h5,
     h6 {
-      font-family: 'VC Honey Deck', serif;
+      font-family: 'Source Sans 3', sans-serif;
       margin: 1rem 0;
     }
 
@@ -282,6 +282,10 @@ Title: Page Template
 {body}
 
 <hr>
+
+<h2>Recent posts</h2>
+
+{recent-posts}
 
 <h2>Weblog.lol Webring</h2>
 
