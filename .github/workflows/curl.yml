@@ -23,8 +23,4 @@ jobs:
 
       - name: Curl request with verbose output (optional)
         run: |
-          curl -L -X GET \
-            -H "CF-Access-Client-Id: ${{env.CF_ID}}" \
-            -H "CF-Access-Client-Secret: ${{env.CF_SECRET}}" \
-            -w "\nResponse Code: %{http_code}\n" \
-            "${{env.TARGET}}"
+          curl -v -H "CF-Access-Client-Id: ${{env.CF_ID}}" -H "CF-Access-Client-Secret: ${{env.CF_SECRET}}" -L "${{env.TARGET}}"
