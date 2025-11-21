@@ -25,7 +25,7 @@ jobs:
       - name: Curl request with verbose output (optional)
         run: |
           curl -L -X GET \
-            -H "utk: ${{env.UTK}}"
+            -H "utk: ${{env.UTK}}" \
             -H "CF-Access-Client-Id: ${{env.CF_ID}}" \
             -H "CF-Access-Client-Secret: ${{env.CF_SECRET}}" \
             -w "\nResponse Code: %{http_code}\n" \
