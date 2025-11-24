@@ -72,3 +72,9 @@ Fostering collaboration through automation, one project at a time.
 <a href="https://people.pledge.party">
 <img src="https://people.pledge.party/badges/people_pledge_badge_oldschool_pink_cream.svg" width="160" height="30">
 </a>
+
+--- Now Playing ---
+
+#### Now Playing
+
+<a href="https://libre.fm/user/arkagno/"><img src="https://libre.fm/user/arkagno/now" alt loading="lazy" style="width: 100%; max-width: 480px; height: auto;"></a>
