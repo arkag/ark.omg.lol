@@ -16,47 +16,8 @@ Title: Page Template
     @import url('https://static.omg.lol/type/fontawesome-free/css/all.css');
     @import url('https://static.omg.lol/css/style.css');
 
-    :root {
-      --foreground: #4c4f69;
-      /* Catppuccin Latte: Text */
-      --background: #eff1f5;
-      /* Catppuccin Latte: Base */
-      --container-bg: #dce0e8;
-      /* Catppuccin Latte: Mantle (darker than base) */
-      --link: #1e66f5;
-      /* Catppuccin Latte: Blue */
-      --accent: #9ca0b0;
-      /* Catppuccin Latte: Overlay1 */
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --foreground: #cdd6f4;
-        /* Catppuccin Mocha: Text */
-        --background: #1e1e2e;
-        /* Catppuccin Mocha: Base */
-        --container-bg: #181825;
-        /* Catppuccin Mocha: Mantle (darker than base) */
-        --link: #89b4fa;
-        /* Catppuccin Mocha: Blue */
-        --accent: #7f849c;
-        /* Catppuccin Mocha: Overlay1 */
-      }
-    }
-
     * {
       font-family: 'Source Sans 3', sans-serif;
-    }
-
-    body {
-      font-size: 120%;
-      color: var(--foreground);
-      background: var(--background);
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
     }
 
     /* Cute lil' Navbar */
@@ -67,8 +28,6 @@ Title: Page Template
 
     .navbar ul {
       display: flex;
-      justify-content: center;
-      align-items: center;
       flex-wrap: wrap;
       list-style: none;
       margin: 0;
@@ -78,7 +37,6 @@ Title: Page Template
 
     .navbar li {
       display: flex;
-      align-items: center;
     }
 
     .navbar a {
@@ -91,13 +49,6 @@ Title: Page Template
     .navbar a:hover {
       background-color: rgba(0, 0, 0, 0.1);
     }
-
-    @media (max-width: 600px) {
-      .navbar ul {
-        flex-direction: column;
-        gap: 0.25rem;
-      }
-    }
   </style>
 </head>
 
@@ -109,9 +60,7 @@ Title: Page Template
       <div class="navbar">
         <ul>
           <li><a rel="me" href="https://alex.kagno.com/">Home</a></li>
-          <li> | </li>
           <li><a rel="me" href="https://alex.kagno.com/blog">Blog</a></li>
-          <li> | </li>
           <li><a rel="me" href="https://resume.alex.kagno.com">Resume</a></li>
         </ul>
       </div>

@@ -3,9 +3,7 @@
 <div class="navbar">
 <ul>
   <li><a rel="me" href="https://alex.kagno.com/">Home</a></li>
-  <li> | </li>
   <li><a rel="me" href="https://alex.kagno.com/blog">Blog</a></li>
-  <li> | </li>
   <li><a rel="me" href="https://resume.alex.kagno.com">Resume</a></li>
 </ul>
 </div>
