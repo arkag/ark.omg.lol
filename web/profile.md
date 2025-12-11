@@ -77,4 +77,6 @@ Just vibin', tbh.
 
 #### Now Playing
 
-<a href="https://libre.fm/user/arkagno/"><img src="https://libre.fm/user/arkagno/now" alt loading="lazy" style="width: 100%; max-width: 480px; height: auto;"></a>
+<a class="shake-little shake-freeze" href="https://libre.fm/user/arkagno/">
+<img src="https://libre.fm/user/arkagno/now" alt loading="lazy" style="width: 100%; max-width: 480px; height: auto;">
+</a>
