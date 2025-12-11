@@ -11,6 +11,7 @@
     @import url('https://static.omg.lol/type/font-mint-grotesk-regular.css');
     @import url('https://static.omg.lol/type/font-md-io.css');
     @import url('https://static.omg.lol/type/fontawesome-free/css/all.css');
+    @import url('https://static.omg.lol/css/style.css');
 
     :root {
       --foreground: #4c4f69;
@@ -41,11 +42,10 @@
     }
 
     * {
-      box-sizing: border-box;
+      font-family: 'Source Sans 3', sans-serif;
     }
 
     body {
-      font-family: 'Source Sans 3', sans-serif;
       font-size: 120%;
       color: var(--foreground);
       background: var(--background);
@@ -94,167 +94,6 @@
         flex-direction: column;
         gap: 0.25rem;
       }
-
-      .navbar li:nth-child(even) {
-        display: none;
-        /* Hide separators on mobile */
-      }
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: 'Source Sans 3', sans-serif;
-      margin: 1rem 0;
-    }
-
-    p,
-    li {
-      line-height: 170%;
-    }
-
-    .container {
-      max-width: 60em;
-      width: 100%;
-      margin: 2em auto;
-      padding: 4em 2em 2em;
-      box-sizing: border-box;
-      background: var(--container-bg);
-      border-radius: 1em;
-    }
-
-    header,
-    main,
-    footer {
-      max-width: 100%;
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    header {
-      margin-bottom: 2em;
-    }
-
-    main {
-      flex: 1;
-    }
-
-    footer {
-      margin-top: 2em;
-    }
-
-    footer p {
-      font-size: 90%;
-      margin: 0;
-    }
-
-    a:link {
-      color: var(--link);
-    }
-
-    a:visited {
-      color: var(--link);
-    }
-
-    a:hover {
-      color: var(--link);
-    }
-
-    a:active {
-      color: var(--link);
-    }
-
-    .post-info,
-    .post-tags {
-      font-size: 85%;
-      color: var(--accent);
-      text-align: center;
-    }
-
-    .post-info i:nth-child(2) {
-      margin-left: .75em;
-    }
-
-    .tag {
-      background: var(--accent);
-      color: var(--background) !important;
-      padding: .3em .4em;
-      margin: .8em 0 0 .4em;
-      border-radius: .5em;
-      text-decoration: none;
-      display: inline-block;
-    }
-
-    hr {
-      border: 0;
-      height: 1px;
-      background: var(--accent);
-      margin: 2em 0;
-    }
-
-    code {
-      padding: .2em .3em;
-      border: 1px solid var(--accent);
-      white-space: pre-wrap;
-      word-wrap: break-word;
-    }
-
-    pre,
-    code {
-      font-family: 'MD IO 0.4';
-      font-size: 90%;
-    }
-
-    pre code {
-      background: var(--background);
-      color: var(--foreground);
-      display: inline-block;
-      padding: 1em;
-      white-space: pre-wrap;
-      word-wrap: break-word;
-    }
-
-    img {
-      max-width: 100%;
-    }
-
-    table {
-      border-collapse: collapse;
-    }
-
-    td,
-    th {
-      padding: .75em;
-      text-align: left;
-      border: 1px solid var(--accent);
-    }
-
-    .weblog-title {
-      text-align: center;
-      font-family: 'Source Sans 3', sans-serif;
-      font-weight: 700;
-      font-size: 2em;
-      margin-top: 0;
-      margin-bottom: 0.25em;
-    }
-
-    .weblog-title a {
-      text-decoration: none;
-      color: var(--foreground);
-    }
-
-    .navbar a {
-      color: var(--foreground);
-    }
-
-    main ul {
-      list-style: none;
-      padding: 0;
     }
   </style>
 </head>
