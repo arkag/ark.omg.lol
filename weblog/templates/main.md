@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+  <link rel="stylesheet" type="text/css" href="https://static.omg.lol/css/style.css">
   <title>{weblog-title}{separator}{post-title}</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +13,6 @@
     @import url('https://static.omg.lol/type/font-mint-grotesk-regular.css');
     @import url('https://static.omg.lol/type/font-md-io.css');
     @import url('https://static.omg.lol/type/fontawesome-free/css/all.css');
-    @import url('https://static.omg.lol/css/style.css');
 
     * {
       font-family: 'Source Sans 3', sans-serif;
