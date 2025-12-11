@@ -69,8 +69,8 @@ Fostering collaboration through automation, one project at a time.
 
 #### Badges
 
-<a href="https://people.pledge.party">
-<img class="shake-crazy shake-constant shake-constant--hover" src="https://people.pledge.party/badges/people_pledge_badge_oldschool_pink_cream.svg" width="160" height="30">
+<a class="shake-little shake-constant shake-constant--hover" href="https://people.pledge.party">
+<img src="https://people.pledge.party/badges/people_pledge_badge_oldschool_pink_cream.svg" width="160" height="30">
 </a>
 
 --- Now Playing ---
