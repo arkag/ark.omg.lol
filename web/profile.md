@@ -8,7 +8,7 @@
 </ul>
 </div>
 
-<div class="shake-little shake-constant--hover">
+<div class="shake-little shake-constant shake-constant--hover">
 {profile-picture}
 </div>
 
