@@ -10,7 +10,7 @@
 
 ### What I’m reading
 
-- [The System Design Primer](https://github.com/donnemartin/system-design-primer) {book}
+- How to be a Failure and Still Live Well by Beverley Clack {book}
 
 ### What I’m watching
 
