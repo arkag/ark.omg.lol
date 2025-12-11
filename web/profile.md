@@ -18,7 +18,7 @@
 
 --- Bio ---
 
-Fostering collaboration through automation, one project at a time.
+Just vibin', tbh.
 
 --- Profile Items ---
 
