@@ -1,16 +1,16 @@
-<link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
-
 # Alex Kagno
 
 <div class="navbar">
 <ul>
-  <li><a rel="me" href="https://alex.kagno.com/">Home</a></li>
-  <li><a rel="me" href="https://alex.kagno.com/blog">Blog</a></li>
-  <li><a rel="me" href="https://resume.alex.kagno.com">Resume</a></li>
+  <li class="shake-little shake-freeze"><a rel="me" href="https://alex.kagno.com/">Home</a></li>
+  <li class="shake-little shake-freeze"><a rel="me" href="https://alex.kagno.com/blog">Blog</a></li>
+  <li class="shake-little shake-freeze"><a rel="me" href="https://resume.alex.kagno.com">Resume</a></li>
 </ul>
 </div>
 
+<div class="shake-little shake-constant--hover">
 {profile-picture}
+</div>
 
 | Pronouns: he/him
 | Occupation: IT Automation Specialist
