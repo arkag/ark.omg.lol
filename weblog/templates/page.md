@@ -4,7 +4,6 @@ Title: Page Template
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script defer src="https://cloud.umami.is/script.js" data-website-id="7479de64-1958-419f-89b5-6dba64e87617"></script>
   <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
   <link rel="stylesheet" type="text/css" href="https://static.omg.lol/css/style.css">
   <title>{weblog-title}{separator}{post-title}</title>
